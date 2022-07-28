@@ -1,0 +1,6 @@
+services:
+  api:
+    ports:
+      - 8082:8082
+    environment:
+      - SPRING_PROFILES_ACTIVE=test

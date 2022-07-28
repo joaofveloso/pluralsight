@@ -1,0 +1,7 @@
+services:
+  web-app:
+    command: ["catalina.sh", "jpda", "run"]
+    environment:
+      - JPDA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+    ports:
+      - 5005:5005

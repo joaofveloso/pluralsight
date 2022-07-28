@@ -1,0 +1,6 @@
+services:
+  api:
+    ports:
+      - 8081:8081
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
